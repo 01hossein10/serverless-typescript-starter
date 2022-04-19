@@ -9,13 +9,14 @@
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
     "start:dev": "sls offline",
-    "start": "npm run build && node build/index.js",
+    "deploy": "sls deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.93",
     "@types/node": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
@@ -38,5 +39,8 @@
   },
   "lint-staged": {
     "*.ts": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
   }
 }

@@ -1,0 +1,18 @@
+service: new-service
+useDotenv: true
+
+plugins:
+  - serverless-functions-base-path
+  - serverless-offline
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: eu-central-1
+  lambdaHashingVersion: 20201221
+
+functions:
+  test:
+    handler: handlers/index.handler
