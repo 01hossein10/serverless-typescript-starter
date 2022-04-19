@@ -16,3 +16,6 @@ provider:
 functions:
   test:
     handler: handlers/index.handler
+
+custom:
+  functionsBasePath: src
