@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf ./build && tsc",
+    "build": "serverless package",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
     "prettier-format": "prettier --config .prettierrc src/**/*.ts --write",
-    "start:dev": "sls offline",
-    "deploy": "sls deploy",
+    "start:dev": "serverless offline",
+    "deploy": "serverless deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,6 +27,7 @@
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
+    "serverless": "^3.37.0",
     "serverless-offline": "^13.3.0",
     "serverless-prune-versions": "^1.0.4",
     "serverless-webpack": "^5.13.0",
