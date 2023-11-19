@@ -2,19 +2,25 @@ service: new-service
 useDotenv: true
 
 plugins:
-  - serverless-functions-base-path
+  - serverless-webpack
   - serverless-offline
-  - serverless-plugin-typescript
+  - serverless-prune-versions
+
+package:
+  individually: true
 
 provider:
   name: aws
-  runtime: nodejs16.x
+  runtime: nodejs20.x
   stage: dev
   region: eu-central-1
 
 functions:
   test:
-    handler: handlers/index.handler
+    handler: src/handlers/index.handler
 
 custom:
-  functionsBasePath: src
+  prune:
+    automatic: true
+    includeLayers: true
+    number: 3
