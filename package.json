@@ -16,24 +16,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.159",
-    "@types/node": "^24.10.7",
+    "@types/aws-lambda": "^8.10.161",
+    "@types/node": "^24.12.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-no-loops": "^0.3.0",
-    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-prettier": "^5.5.5",
     "lint-staged": "^15.5.2",
-    "osls": "^3.62.0",
-    "prettier": "^3.7.4",
+    "osls": "^3.62.1",
+    "prettier": "^3.8.1",
     "rimraf": "^5.0.10",
     "serverless-offline": "^13.9.0",
     "serverless-prune-versions": "^1.0.4",
-    "serverless-webpack": "^5.15.3",
+    "serverless-webpack": "^5.15.4",
     "simple-git-hooks": "^2.13.1",
     "ts-loader": "^9.5.4",
-    "webpack": "^5.104.1"
+    "webpack": "^5.105.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
